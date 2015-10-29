@@ -17,11 +17,11 @@ A continuación nos aparecerá un entorno con una máquina virtual que hay que e
 
 Antes de conectarse a ella hay que clicar en "**modificar**" y marcar la opción de "**no VNC**".
 
-!(pictures/noVNC.png)
+![Sin titulo](pictures/noVNC.png)
 
 Lo siguiente que haremos será abrir la máquina virtual y loguearnos.
 
-!(pictures/login.png)
+![Sin titulo](pictures/login.png)
 
 Una vez dentro ejecutaremos el comando "**ifconfig**" para saber nuestra dirección IP y poder entrar a nuestra cuenta en iaas desde cualquier terminal.
 
