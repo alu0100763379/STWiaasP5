@@ -13,7 +13,7 @@ Para empezar entramos en el sitio web **[iaas.ull.es](http://iaas.ull.es/)** y e
 
 A continuación nos aparecerá un entorno con una máquina virtual que hay que encender.
 
-!(pictures/maquinavirtual.png)
+![Sin titulo](pictures/maquinavirtual.png)
 
 Antes de conectarse a ella hay que clicar en "**modificar**" y marcar la opción de "**no VNC**".
 
