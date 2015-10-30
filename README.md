@@ -60,3 +60,4 @@ Podremos correr nuestra aplicación en el servidor.
 - **Página Desplegada en iaas.ull.es:** http://10.6.128.78:8080/index.html
 - **Página Personal de GitHub:** http://alu0100763379.github.io/
 
+[![Build Status](https://travis-ci.org/alu0100763379/STWiaasP5.svg)](https://travis-ci.org/alu0100763379/STWiaasP5)
