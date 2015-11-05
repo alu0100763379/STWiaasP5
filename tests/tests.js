@@ -67,3 +67,54 @@ describe("Temperature_Tests", function() {
         }
     });
 });
+describe("Tests_Sinon", function() {
+
+  it("25F", function() {
+    var temp = new Temperatura();
+    temp.set_num(25);
+    temp.set_tipo("F");
+
+    var callback = sinon.spy();
+    callback(temp.get_num());
+
+    expect(callback.called).to.be.true;
+    expect(callback.calledOnce).to.be.true;
+    expect(callback.firstCall.calledWith(25)).to.be.true;
+    expect(callback.firstCall.calledWith(sinon.match.number)).to.be.true;
+    expect(temp.get_num()).to.equal(25);
+    expect(temp.get_tipo()).to.equal("F");
+  });
+
+it("42C", function() {
+    var temp = new Temperatura();
+    temp.set_num(42);
+    temp.set_tipo("C");
+
+    var callback = sinon.spy();
+    callback(temp.get_num());
+
+    expect(callback.called).to.be.true;
+    expect(callback.calledOnce).to.be.true;
+    expect(callback.firstCall.calledWith(42)).to.be.true;
+    expect(callback.firstCall.calledWith(sinon.match.number)).to.be.true;
+    expect(temp.get_num()).to.equal(42);
+    expect(temp.get_tipo()).to.equal("C");
+  });
+  
+    
+  it("273.15K", function() {
+    var temp = new Temperatura();
+    temp.set_num(273.15);
+    temp.set_tipo("F");
+
+    var callback = sinon.spy();
+    callback(temp.get_num());
+
+    expect(callback.called).to.be.true;
+    expect(callback.calledOnce).to.be.true;
+    expect(callback.firstCall.calledWith(273.15)).to.be.true;
+    expect(callback.firstCall.calledWith(sinon.match.number)).to.be.true;
+
+  }); 
+
+});
